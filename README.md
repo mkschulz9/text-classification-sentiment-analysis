@@ -115,28 +115,28 @@ After training, each model’s performance is evaluated on both training and tes
 
 **Definition**: Accuracy measures the proportion of correctly predicted instances (both positive and negative) out of the total instances.  
 **Formula**:  
-\[ \text{Accuracy} = \frac{\text{True Positives (TP)} + \text{True Negatives (TN)}}{\text{Total Instances}} \]  
+![Accuracy](<https://latex.codecogs.com/png.latex?\text{Accuracy}=\frac{\text{True%20Positives%20(TP)}+\text{True%20Negatives%20(TN)}}{\text{Total%20Instances}}>)  
 **Use Case**: Useful when the dataset is balanced (similar numbers of positive and negative instances).
 
 ### Precision
 
-**Definition**: Precision measures the proportion of correctly predicted positive instances out of all instances predicted as positive.  
+**Definition**: Precision measures the proportion of correctly predicted positive instances out of all instances predicted as positive (i.e., of all the postive predictions made by the model, what percentage of them are truly postive?).  
 **Formula**:  
-\[ \text{Precision} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Positives (FP)}} \]  
+![Precision](<https://latex.codecogs.com/png.latex?\text{Precision}=\frac{\text{True%20Positives%20(TP)}}{\text{True%20Positives%20(TP)}+\text{False%20Positives%20(FP)}}>)  
 **Use Case**: Important in scenarios where minimizing false positives is critical (e.g., spam detection).
 
 ### Recall
 
-**Definition**: Recall (or Sensitivity) measures the proportion of correctly predicted positive instances out of all actual positive instances.  
+**Definition**: Recall (or Sensitivity) measures the proportion of correctly predicted positive instances out of all actual positive instances (i.e., out of all the truly postive instances that the model was tested on, what percentage of them did the model correctly identify as positive?).  
 **Formula**:  
-\[ \text{Recall} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Negatives (FN)}} \]  
+![Recall](<https://latex.codecogs.com/png.latex?\text{Recall}=\frac{\text{True%20Positives%20(TP)}}{\text{True%20Positives%20(TP)}+\text{False%20Negatives%20(FN)}}>)  
 **Use Case**: Crucial in scenarios where minimizing false negatives is important (e.g., disease detection).
 
 ### F1-Score
 
 **Definition**: F1-Score is the harmonic mean of Precision and Recall, providing a single metric that balances both.  
 **Formula**:  
-\[ \text{F1-Score} = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}} \]  
+![Equation](https://latex.codecogs.com/png.latex?\text{F1-Score}=2\cdot\frac{\text{Precision}\cdot\text{Recall}}{\text{Precision}+\text{Recall}})  
 **Use Case**: Useful when there is an imbalance between classes and you want a trade-off between Precision and Recall.
 
 These allow quick comparison of how well each classifier performs in predicting sentiment on unseen reviews.
